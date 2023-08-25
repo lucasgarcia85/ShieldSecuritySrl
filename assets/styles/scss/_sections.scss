@@ -1,97 +1,224 @@
-.micro_tipos , .micro_montaje{
-
-   
-    
-    ul {
-        list-style: none;
-
-        i{
-            font-size: 1.9rem;
-            color:$color-menu;
-            margin-right: 0.5rem;
-        }
-    }
-}
 
 .section1 {
+    margin-top:7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
-    // background-image: linear-gradient( rgb(255 255 255 / 50%), rgba(129, 78, 23, 0.35) ),url(../../images/fondo4.jpg);
-    background-image: linear-gradient(182deg,rgba(255, 255, 255, 40%), rgba(129, 78, 23, 30%)), url(../../images/fondo.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../../images/Centro-Monitoreo-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 7% 50%;
+    background-position: center;
+    height: auto;
+
         @include media-breakpoint-up(sm){
-            background-position: center;
-            height: auto;
+            margin-top: auto;
         }
+       
         @include media-breakpoint-up(lg){
-            background-position: center 25%;
-            height: auto;
+            background-position: center 63%;
+            height: 50rem;
         }
     
-        padding-top: 11rem;
-
-            @include media-breakpoint-up(sm){
-                padding-top:5rem;
-            }
-            @include media-breakpoint-up(xl){
-                padding-top:8rem;
-            }
-
+       
     &>.container {
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
-
-        .titulo {
-            text-align: center;
-            text-shadow: 2px 1px 2px rgba(255, 253, 253, 0.59);
-    
-            @include media-breakpoint-up(lg) {
-                width: 70%;
-                text-align: left;
-                height: 270px;
+        color: white;
+        text-align: center;
+        height: 100%;
+        
+       div{
+        display: flex;
+        flex-direction: column;
+        
+             
+            .titulo {
+               text-align: center;
+               
+       
+               @include media-breakpoint-up(lg) {
+                  
+               }
+      
             }
-   
-         }
+
+            p{
+                padding-top: 4rem;
+                width: 70%;
+                text-align: center;
+                margin: auto;
+            }
+
+
+
+       }
+
 
     }
 
-    .titulo {
-        text-align: center;
-        text-shadow: 2px 1px 2px rgba(255, 253, 253, 0.59);
+       
+}
 
-        @include media-breakpoint-up(lg) {
-            width: 70%;
-            text-align: left;
-            height: 270px;
+.por_que_elegirnos{
+    margin-top: 14rem;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../../images/imagenes-para-blog-Camaras-de-seguridad-BANNER.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+
+    &>.container{
+
+        .banner_contador{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 60%;
+            height: 14rem;
+            margin: 0 auto;
+            background-color: #902F12;
+            transform: translateY(-10rem);
+            border-radius: 2rem;
+
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 10rem;
+                height: 10rem;
+                background-color: white;
+
+            }
         }
 
-        
+        h2{
+            text-align: center;
+            padding-bottom: 3rem;
+            transform: translateY(-3rem);
+        }
 
-     }
+        .valores{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 2rem;
+            align-items: center;
+            justify-content: space-evenly;
 
-    
-}
+            div{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 25rem;
+                height: 13rem;
+                background-color: white;
+                border-radius: 2rem;
+                color: black;
+                padding: 3rem;
+            }
+        }
+
+        .know_how{
+            margin: 3rem 0;
+        }
+
+        .slider{
+            background-color: #8d8787;
+            height: 20rem;
+            margin: 0rem auto;
+            transform: translateY(13rem);
+            border-radius: 2rem;
+            
+        }
 
 
-.quienes_somos{
-    margin-top: 1rem;
-
-    .tipo{
-        // font-size: 1.5rem; toma el de globals body
-        text-align: justify;
-       
     }
-  
+
+
+
 }
 
 
+.servicios {
 
-.nuestros_servicios{
-    background-color: $color-bg-main;
-    
+    margin-top: 14rem;
 
-       
+    .container {
+
+        .soluciones {
+            text-align: center;
+            color: #000;
+        }
+
+        .soluciones__grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            justify-content: center;
+            grid-gap: 2rem;
+            margin-top: 6rem;
+
+            @include media-breakpoint-up(md) {
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 4rem;
+            }
+
+            @include media-breakpoint-up(lg) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            &.soluciones-tecnologicas {
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 2rem;
+                @include media-breakpoint-up(md) {
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 3rem;
+                }
+                @include media-breakpoint-up(lg) {
+                    grid-template-columns: repeat(4, 1fr);
+                }
+            }
+
+            .soluciones__grid--servicio {
+                width: auto;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: start;
+                box-shadow: 0 0 14px 3px #d9d9d9;
+                border-radius: 1rem;
+                padding: 3rem;
+
+                h3 {
+                    text-align: center;
+                }
+                
+                img {
+                    height: 85px;
+                    width: auto;
+                    margin-bottom: 1rem;
+                }
+                
+                p {
+                    //text-align: justify;
+                    margin-bottom: 1rem;
+                    @include media-breakpoint-up(lg) {
+                        margin-bottom: 3rem;
+                    }
+                }
+
+                .btn {
+                    @include media-breakpoint-up(lg) {
+                        margin-top: auto;
+                    }
+                }
+
+            }
+        }
+    }
 }
   
 

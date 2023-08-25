@@ -3,34 +3,12 @@ html {
     font-size: 10px;
 }
 
-@font-face {
-    font-family: 'Museo';
-    src: url('../../fonts/Museo700-Regular.otf');
-    font-weight: 700;
-    font-style:normal;
-}
-
-@font-face {
-    font-family: 'Museo';
-    src: url('../../fonts/Museo300-Regular.otf');
-    font-weight: 300;
-    font-style: normal;
-}
-
-// hr{
-//     margin: 10px auto;
-//     width: 90%;
-//     height: 2px;
-//     color:$color-main;
-// }
 
 body {
     
-    font-family: $font-family-main;
     font-size: 1.7rem;
     line-height: 1.5;
-    color: $color-main;
-}
+    }
 
 .btn {
     min-width: 240px;
@@ -47,35 +25,37 @@ body {
     padding: 1rem 1.6rem;
     position: relative;
     font-weight: 600;
-    border-radius: 0px;
-    width: 100%;
+    border-radius: 5rem;
+    margin: 4rem auto;
 
-    @include media-breakpoint-up(md) {
-        width: auto;
-    }
-
+   
     span {
         position: relative;
         z-index: 10;
     }
-    &:after {
-        content: '';
-        display: inline-block;
-        width: 0;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        transition: all 0.3s ease;
-        background-color: $color-menu-hover;
-        z-index: 9;
-    }
+
+    
+    // &:after {
+    //     content: '';
+    //     display: inline-block;
+    //     width: 0;
+    //     height: 100%;
+    //     position: absolute;
+    //     left: 0;
+    //     transition: all 0.3s ease;
+    //     background-color: $color-marca;
+    //     z-index: 9;
+    // }
     
     &.btn-primary {
-        background: $color-menu;
+        background: $color-marca;
         &:hover {
-            &:after {
-                width: 100%;
-            }
+
+            background-color: brown;
+            
+            // &:after {
+            //     width: 100%;
+            // }
         }
     }
 
@@ -139,11 +119,21 @@ h2 {
     font-weight: 700;
     margin-bottom: 1rem;
     text-transform: uppercase;
+
+    &:after {
+        content: "";
+        display: block;
+        height: 5px;
+        background-color: $color-marca;
+        width: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateY(10px);
+    }
 }
 
 h1 {
     font-size: 3.3rem;
-    color: black;
     @include media-breakpoint-up(md) {
         font-size: 4.5rem;
     }

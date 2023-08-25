@@ -11909,23 +11909,9 @@ html {
   font-size: 10px;
 }
 
-@font-face {
-  font-family: "Museo";
-  src: url("../../fonts/Museo700-Regular.otf");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Museo";
-  src: url("../../fonts/Museo300-Regular.otf");
-  font-weight: 300;
-  font-style: normal;
-}
 body {
-  font-family: "Montserrat", sans-serif;
   font-size: 1.7rem;
   line-height: 1.5;
-  color: black;
 }
 
 .btn {
@@ -11943,34 +11929,18 @@ body {
   padding: 1rem 1.6rem;
   position: relative;
   font-weight: 600;
-  border-radius: 0px;
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .btn {
-    width: auto;
-  }
+  border-radius: 5rem;
+  margin: 4rem auto;
 }
 .btn span {
   position: relative;
   z-index: 10;
 }
-.btn:after {
-  content: "";
-  display: inline-block;
-  width: 0;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  transition: all 0.3s ease;
-  background-color: #471405;
-  z-index: 9;
-}
 .btn.btn-primary {
-  background: rgb(135, 25, 25);
+  background: #902F12;
 }
-.btn.btn-primary:hover:after {
-  width: 100%;
+.btn.btn-primary:hover {
+  background-color: brown;
 }
 .btn.btn-whatsapp {
   background-color: #1fca1f;
@@ -12028,10 +11998,21 @@ h2,
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
+h1:after, .h1:after,
+h2:after,
+.h2:after {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #902F12;
+  width: 15rem;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(10px);
+}
 
 h1, .h1 {
   font-size: 3.3rem;
-  color: black;
 }
 @media (min-width: 768px) {
   h1, .h1 {
@@ -12101,7 +12082,7 @@ h3, .h3 {
 }
 footer {
   padding-top: 4rem;
-  background-color: #ebebeb;
+  background-color: white;
   /*CONTACT FORM
   ****************************************/
 }
@@ -12223,13 +12204,13 @@ footer .redes .social-links li a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgb(135, 25, 25);
+  background: black;
   color: #fff;
   border-radius: 50%;
   text-decoration: none;
 }
 footer .redes .social-links li a:hover {
-  background-color: #471405;
+  background-color: #902F12;
   transform: translateY(-0.5rem);
 }
 footer .redes .social-links li a i {
@@ -12267,7 +12248,7 @@ footer .copyright {
   font-size: 1.5rem;
   font-weight: bold;
   background-color: white;
-  color: rgb(135, 25, 25);
+  color: black;
   height: 50px;
 }
 footer .copyright .copy {
@@ -12296,13 +12277,11 @@ footer .footer-widget a img {
   }
 }
 footer .back-to-top {
-  color: #fff;
   position: fixed;
   right: 1.6rem;
   bottom: 2.3rem;
   transition: all 0.3s ease-in-out;
-  background-color: #fff;
-  border: 2px solid #20396f;
+  background-color: #902F12;
   width: 4rem;
   height: 4rem;
   display: grid;
@@ -12312,29 +12291,26 @@ footer .back-to-top {
   z-index: 5;
 }
 @media (min-width: 992px) {
-  footer .back-to-top:hover {
-    background-color: #4764a3;
-    border-color: #4764a3;
-  }
   footer .back-to-top:hover i {
-    color: #fff;
+    scale: 1.5;
   }
 }
 footer .back-to-top i {
   font-size: 2.2rem;
-  color: #20396f;
+  color: white;
   transition: all 0.3s ease;
 }
 
+header {
+  background-color: white;
+}
 @media (max-width: 575.98px) {
   header {
     position: fixed;
+    top: 0px;
     z-index: 2;
     width: 100%;
   }
-}
-header .navbar {
-  background-color: #ebebeb;
 }
 header .navbar-toggler {
   border: 0;
@@ -12352,7 +12328,7 @@ header .navbar-toggler-icon span {
   display: block;
   width: 30px;
   height: 3px;
-  background-color: rgb(135, 25, 25);
+  background-color: black;
   transition: all 0.25s ease-in-out;
 }
 header .navbar-toggler-icon span:not(:last-child) {
@@ -12377,7 +12353,7 @@ header .navbar .navbar-collapse .nav-item:not(:last-child) {
 }
 header .navbar .navbar-collapse .nav-item .nav-link {
   font-size: 1.5rem;
-  color: rgb(135, 25, 25);
+  color: black;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   font-weight: 600;
@@ -12385,8 +12361,7 @@ header .navbar .navbar-collapse .nav-item .nav-link {
   transition: all 0.4s ease;
 }
 header .navbar .navbar-collapse .nav-item .nav-link:hover {
-  color: #471405;
-  scale: 1.1;
+  color: #902F12;
 }
 header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
   width: 88%;
@@ -12400,116 +12375,220 @@ header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
     width: 0;
     position: absolute;
     transition: all 0.3s ease;
-    background-color: #471405;
-    height: 1px;
+    background-color: #902F12;
+    height: 2px;
     bottom: 2px;
   }
 }
 header .navbar-brand img {
-  width: 220px;
+  width: 60px;
   height: auto;
   transition: all 0.3s ease;
 }
 @media (min-width: 576px) {
   header .navbar-brand img {
-    width: 270px;
+    width: 60px;
   }
 }
 @media (min-width: 768px) {
   header .navbar-brand img {
-    width: 290px;
+    width: 80px;
   }
 }
 @media (min-width: 992px) {
   header .navbar-brand img {
-    width: 350px;
+    width: 115px;
   }
 }
 
 .navbar-toggler[aria-expanded=true] .navbar-toggler-icon #S1 {
   transform: rotate(45deg) translateY(7px);
-  background-color: #471405;
+  background-color: #902F12;
 }
 
 .navbar-toggler[aria-expanded=true] .navbar-toggler-icon #S2 {
   transform: rotate(-45deg) translateY(-7px);
-  background-color: #471405;
-}
-
-.micro_tipos ul, .micro_montaje ul {
-  list-style: none;
-}
-.micro_tipos ul i, .micro_montaje ul i {
-  font-size: 1.9rem;
-  color: rgb(135, 25, 25);
-  margin-right: 0.5rem;
+  background-color: #902F12;
 }
 
 .section1 {
-  background-image: linear-gradient(182deg, rgba(255, 255, 255, 0.4), rgba(129, 78, 23, 0.3)), url(../../images/fondo.jpg);
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/Centro-Monitoreo-1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: 7% 50%;
-  padding-top: 11rem;
+  background-position: center;
+  height: auto;
 }
 @media (min-width: 576px) {
   .section1 {
-    background-position: center;
-    height: auto;
+    margin-top: auto;
   }
 }
 @media (min-width: 992px) {
   .section1 {
-    background-position: center 25%;
-    height: auto;
-  }
-}
-@media (min-width: 576px) {
-  .section1 {
-    padding-top: 5rem;
-  }
-}
-@media (min-width: 1200px) {
-  .section1 {
-    padding-top: 8rem;
+    background-position: center 63%;
+    height: 50rem;
   }
 }
 .section1 > .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  height: 100%;
+}
+.section1 > .container div {
+  display: flex;
   flex-direction: column;
 }
-.section1 > .container .titulo {
+.section1 > .container div .titulo {
   text-align: center;
-  text-shadow: 2px 1px 2px rgba(255, 253, 253, 0.59);
 }
-@media (min-width: 992px) {
-  .section1 > .container .titulo {
-    width: 70%;
-    text-align: left;
-    height: 270px;
-  }
-}
-.section1 .titulo {
+.section1 > .container div p {
+  padding-top: 4rem;
+  width: 70%;
   text-align: center;
-  text-shadow: 2px 1px 2px rgba(255, 253, 253, 0.59);
-}
-@media (min-width: 992px) {
-  .section1 .titulo {
-    width: 70%;
-    text-align: left;
-    height: 270px;
-  }
+  margin: auto;
 }
 
-.quienes_somos {
-  margin-top: 1rem;
+.por_que_elegirnos {
+  margin-top: 14rem;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/imagenes-para-blog-Camaras-de-seguridad-BANNER.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
 }
-.quienes_somos .tipo {
-  text-align: justify;
+.por_que_elegirnos > .container .banner_contador {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 60%;
+  height: 14rem;
+  margin: 0 auto;
+  background-color: #902F12;
+  transform: translateY(-10rem);
+  border-radius: 2rem;
+}
+.por_que_elegirnos > .container .banner_contador div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 10rem;
+  background-color: white;
+}
+.por_que_elegirnos > .container h2, .por_que_elegirnos > .container .h2 {
+  text-align: center;
+  padding-bottom: 3rem;
+  transform: translateY(-3rem);
+}
+.por_que_elegirnos > .container .valores {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.por_que_elegirnos > .container .valores div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25rem;
+  height: 13rem;
+  background-color: white;
+  border-radius: 2rem;
+  color: black;
+  padding: 3rem;
+}
+.por_que_elegirnos > .container .know_how {
+  margin: 3rem 0;
+}
+.por_que_elegirnos > .container .slider {
+  background-color: #8d8787;
+  height: 20rem;
+  margin: 0rem auto;
+  transform: translateY(13rem);
+  border-radius: 2rem;
 }
 
-.nuestros_servicios {
-  background-color: #ebebeb;
+.servicios {
+  margin-top: 14rem;
+}
+.servicios .container .soluciones {
+  text-align: center;
+  color: #000;
+}
+.servicios .container .soluciones__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  grid-gap: 2rem;
+  margin-top: 6rem;
+}
+@media (min-width: 768px) {
+  .servicios .container .soluciones__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  .servicios .container .soluciones__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.servicios .container .soluciones__grid.soluciones-tecnologicas {
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2rem;
+}
+@media (min-width: 768px) {
+  .servicios .container .soluciones__grid.soluciones-tecnologicas {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .servicios .container .soluciones__grid.soluciones-tecnologicas {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.servicios .container .soluciones__grid .soluciones__grid--servicio {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  box-shadow: 0 0 14px 3px #d9d9d9;
+  border-radius: 1rem;
+  padding: 3rem;
+}
+.servicios .container .soluciones__grid .soluciones__grid--servicio h3, .servicios .container .soluciones__grid .soluciones__grid--servicio .h3 {
+  text-align: center;
+}
+.servicios .container .soluciones__grid .soluciones__grid--servicio img {
+  height: 85px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+.servicios .container .soluciones__grid .soluciones__grid--servicio p {
+  margin-bottom: 1rem;
+}
+@media (min-width: 992px) {
+  .servicios .container .soluciones__grid .soluciones__grid--servicio p {
+    margin-bottom: 3rem;
+  }
+}
+@media (min-width: 992px) {
+  .servicios .container .soluciones__grid .soluciones__grid--servicio .btn {
+    margin-top: auto;
+  }
 }
 
 .seguridad_estatica_personal {
