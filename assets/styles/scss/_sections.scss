@@ -169,18 +169,6 @@
                 grid-template-columns: repeat(3, 1fr);
             }
 
-            &.soluciones-tecnologicas {
-                grid-template-columns: repeat(1, 1fr);
-                grid-gap: 2rem;
-                @include media-breakpoint-up(md) {
-                    grid-template-columns: repeat(2, 1fr);
-                    grid-gap: 3rem;
-                }
-                @include media-breakpoint-up(lg) {
-                    grid-template-columns: repeat(4, 1fr);
-                }
-            }
-
             .soluciones__grid--servicio {
                 width: auto;
                 height: auto;
@@ -190,6 +178,7 @@
                 justify-content: start;
                 box-shadow: 0 0 14px 3px #d9d9d9;
                 border-radius: 1rem;
+                row-gap: 2rem;
                 padding: 3rem;
 
                 h3 {

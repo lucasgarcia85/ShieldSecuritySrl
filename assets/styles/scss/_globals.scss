@@ -151,6 +151,16 @@ h2 {
 }
 h3{
     font-size: 2rem;
+    &:after {
+        content: "";
+        display: block;
+        height: 5px;
+        background-color: $color-marca;
+        width: 10rem;
+        margin-left: auto;
+        margin-right: auto;
+        transform: translateY(10px);
+    }
 }
 
 

@@ -12037,6 +12037,16 @@ h2, .h2 {
 h3, .h3 {
   font-size: 2rem;
 }
+h3:after, .h3:after {
+  content: "";
+  display: block;
+  height: 5px;
+  background-color: #902F12;
+  width: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  transform: translateY(10px);
+}
 
 .lg-sub-html p {
   font-size: 1.5rem;
@@ -12247,8 +12257,8 @@ footer .copyright {
   justify-content: center;
   font-size: 1.5rem;
   font-weight: bold;
-  background-color: white;
-  color: black;
+  background-color: rgb(0, 0, 0);
+  color: white;
   height: 50px;
 }
 footer .copyright .copy {
@@ -12543,21 +12553,6 @@ header .navbar-brand img {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-.servicios .container .soluciones__grid.soluciones-tecnologicas {
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 2rem;
-}
-@media (min-width: 768px) {
-  .servicios .container .soluciones__grid.soluciones-tecnologicas {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 3rem;
-  }
-}
-@media (min-width: 992px) {
-  .servicios .container .soluciones__grid.soluciones-tecnologicas {
-    grid-template-columns: repeat(4, 1fr);
-  }
-}
 .servicios .container .soluciones__grid .soluciones__grid--servicio {
   width: auto;
   height: auto;
@@ -12567,6 +12562,7 @@ header .navbar-brand img {
   justify-content: start;
   box-shadow: 0 0 14px 3px #d9d9d9;
   border-radius: 1rem;
+  row-gap: 2rem;
   padding: 3rem;
 }
 .servicios .container .soluciones__grid .soluciones__grid--servicio h3, .servicios .container .soluciones__grid .soluciones__grid--servicio .h3 {
