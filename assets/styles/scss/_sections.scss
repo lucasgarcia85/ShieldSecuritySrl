@@ -6,6 +6,7 @@
     align-items: center;
     
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../../images/Centro-Monitoreo-1.jpg);
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -76,12 +77,15 @@
             flex-flow: row nowrap;
             align-items: center;
             justify-content: space-evenly;
-            width: 60%;
             height: 14rem;
             margin: 0 auto;
             background-color: #902F12;
             transform: translateY(-10rem);
             border-radius: 2rem;
+
+            @include media-breakpoint-up(md) {
+               width: 80%;
+            }
 
             div{
                 display: flex;
@@ -165,10 +169,7 @@
                 grid-gap: 4rem;
             }
 
-            @include media-breakpoint-up(lg) {
-                grid-template-columns: repeat(3, 1fr);
-            }
-
+          
             .soluciones__grid--servicio {
                 width: auto;
                 height: auto;
@@ -192,15 +193,13 @@
                 }
                 
                 p {
-                    //text-align: justify;
+                    text-align: justify;
                     margin-bottom: 1rem;
-                    @include media-breakpoint-up(lg) {
-                        margin-bottom: 3rem;
-                    }
-                }
+                    margin-top: 1rem;
+                                   }
 
                 .btn {
-                    @include media-breakpoint-up(lg) {
+                    @include media-breakpoint-up(sm) {
                         margin-top: auto;
                     }
                 }
