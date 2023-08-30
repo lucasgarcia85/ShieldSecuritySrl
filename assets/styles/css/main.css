@@ -11963,10 +11963,9 @@ body {
 
 a {
   transition: all 0.3s ease;
-  color: #20396f;
 }
 a:hover {
-  color: #0a245c;
+  color: #902F12;
 }
 
 .container {
@@ -12093,7 +12092,8 @@ h3:after, .h3:after {
 }
 footer {
   padding-top: 4rem;
-  background-color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/monitoring.jpg);
+  background-size: cover;
   /*CONTACT FORM
   ****************************************/
 }
@@ -12102,7 +12102,7 @@ footer .form {
 }
 footer .formulario {
   margin: auto;
-  background-image: linear-gradient(rgba(19, 18, 18, 0.65), rgba(129, 78, 23, 0.21));
+  background-image: linear-gradient(rgba(255, 255, 255, 0.16), rgba(255, 255, 255, 0.16));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -12165,22 +12165,11 @@ footer .formulario .botonform {
 footer .formulario .botonform .btn {
   min-width: 180px;
 }
-footer .formulario .captcha {
-  display: inline;
-  padding-right: 1.2rem;
-}
-footer .formulario .captcha #respuesta {
-  width: 9rem;
-  border: none;
-  border-radius: 0.6rem;
-  text-align: center;
-}
-footer .formulario .captcha i {
-  font-size: 1.9rem;
-  margin-left: 1rem;
-}
 footer .logo-footer {
   margin-top: 4rem;
+}
+footer .redes {
+  color: white;
 }
 footer .redes h3, footer .redes .h3 {
   text-align: center;
@@ -12228,6 +12217,7 @@ footer .redes .social-links li a i {
   font-size: 2.4rem;
 }
 footer .info {
+  color: white;
   padding-top: 2rem;
   text-align: center;
 }
@@ -12238,7 +12228,8 @@ footer .info {
     text-align: left;
   }
 }
-footer .info h3 i, footer .info .h3 i {
+footer .info h4 i, footer .info .h4 i {
+  text-decoration: none;
   margin-right: 0.7rem;
   font-size: 2.1rem;
 }
