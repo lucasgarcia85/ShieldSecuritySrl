@@ -11937,11 +11937,22 @@ body {
   position: relative;
   z-index: 10;
 }
+.btn:after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+  background-color: #902F12;
+  z-index: 9;
+}
 .btn.btn-primary {
   background: #902F12;
 }
-.btn.btn-primary:hover {
-  background-color: brown;
+.btn.btn-primary:hover:after {
+  width: 100%;
 }
 .btn.btn-whatsapp {
   background-color: #1fca1f;
@@ -12048,6 +12059,10 @@ h3:after, .h3:after {
   transform: translateY(10px);
 }
 
+h4, .h4 {
+  font-size: 1.6rem;
+}
+
 .lg-sub-html p {
   font-size: 1.5rem;
 }
@@ -12099,6 +12114,12 @@ footer {
 }
 footer .form {
   margin-bottom: 4rem;
+  margin-top: 5rem;
+}
+@media (min-width: 992px) {
+  footer .form {
+    margin-top: 1rem;
+  }
 }
 footer .formulario {
   margin: auto;
@@ -12106,7 +12127,7 @@ footer .formulario {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 2rem 1.3rem;
+  padding: 4rem 1.3rem;
   border-radius: 1rem;
 }
 @media (min-width: 992px) {
@@ -12235,6 +12256,7 @@ footer .info h4 i, footer .info .h4 i {
 }
 footer .info p, footer .info a {
   font-size: 1.8rem;
+  color: white;
 }
 @media (min-width: 576px) {
   footer .info p, footer .info a {
@@ -12248,13 +12270,14 @@ footer .copyright {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  font-weight: bold;
   background-color: rgb(0, 0, 0);
   color: white;
   height: 50px;
 }
 footer .copyright .copy {
   margin: 0;
+  padding: 0 5rem;
+  text-align: center;
 }
 footer .footer-widget {
   position: fixed;

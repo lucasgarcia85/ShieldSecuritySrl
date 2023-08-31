@@ -35,27 +35,26 @@ body {
     }
 
     
-    // &:after {
-    //     content: '';
-    //     display: inline-block;
-    //     width: 0;
-    //     height: 100%;
-    //     position: absolute;
-    //     left: 0;
-    //     transition: all 0.3s ease;
-    //     background-color: $color-marca;
-    //     z-index: 9;
-    // }
+    &:after {
+        content: '';
+        display: inline-block;
+        width: 0;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        transition: all 0.3s ease;
+        background-color: $color-marca;
+        z-index: 9;
+    }
     
     &.btn-primary {
         background: $color-marca;
         &:hover {
 
-            background-color: brown;
-            
-            // &:after {
-            //     width: 100%;
-            // }
+                       
+            &:after {
+                width: 100%;
+            }
         }
     }
 
@@ -161,6 +160,10 @@ h3{
         margin-right: auto;
         transform: translateY(10px);
     }
+}
+
+h4{
+    font-size: 1.6rem;
 }
 
 

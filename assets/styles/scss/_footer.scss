@@ -6,6 +6,11 @@ footer {
 
     .form {
         margin-bottom: 4rem;
+        margin-top:5rem;
+
+        @include media-breakpoint-up(lg) {
+           margin-top: 1rem;
+        }
     }
 
     /*CONTACT FORM
@@ -16,7 +21,7 @@ footer {
         background-repeat:no-repeat;
         background-size: cover;
         background-position: center;
-        padding: 2rem 1.3rem;
+        padding: 4rem 1.3rem;
         border-radius: 1rem;
         @include media-breakpoint-up(lg) {
             padding: 4rem 2rem;
@@ -185,6 +190,7 @@ footer {
 
         p, a{
             font-size: 1.8rem;
+            color: white;
 
             @include media-breakpoint-up(sm) {
                 margin-left: 3rem;
@@ -204,6 +210,8 @@ footer {
         height: 50px;
         .copy {
             margin: 0;
+            padding: 0 5rem;
+            text-align: center;
         }
     
     }
