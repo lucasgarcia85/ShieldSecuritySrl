@@ -95,7 +95,7 @@
                 width: 12rem;
                 height: 10rem;
                 font-size: 2rem;
-                font-weight: bold;
+                font-weight: 500;
 
                 @include media-breakpoint-up(sm) {
                     font-size: 4rem;
@@ -104,7 +104,7 @@
                  p{
                     padding-top: 0.3rem;
                     font-size: 1rem;
-                    font-weight: 300;
+                    font-weight: 400;
                     color: #d0b8b8;
                     text-align: center;
                  }
