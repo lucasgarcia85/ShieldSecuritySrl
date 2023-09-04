@@ -12505,13 +12505,27 @@ header .navbar-brand img {
     width: 80%;
   }
 }
-.por_que_elegirnos > .container .banner_contador div {
+.por_que_elegirnos > .container .banner_contador .counter {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 10rem;
+  width: 12rem;
   height: 10rem;
-  background-color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+@media (min-width: 576px) {
+  .por_que_elegirnos > .container .banner_contador .counter {
+    font-size: 4rem;
+  }
+}
+.por_que_elegirnos > .container .banner_contador .counter p {
+  padding-top: 0.3rem;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #d0b8b8;
+  text-align: center;
 }
 .por_que_elegirnos > .container h2, .por_que_elegirnos > .container .h2 {
   text-align: center;

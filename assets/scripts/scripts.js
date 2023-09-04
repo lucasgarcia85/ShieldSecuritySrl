@@ -10,15 +10,51 @@ const bsCollapse = new bootstrap.Collapse(menuToggle, {toggle:false})
 navLinks.forEach((l) => {
     l.addEventListener('click', () => { bsCollapse.toggle() })
 })
-// let limenu = document.querySelectorAll(".nav-item");
-// for (i=0; limenu.length-1; i++){
 
-// limenu[i].addEventListener("click", function(){
 
-//     document.querySelector("#navbarNav").classList.remove("show");
+// Contador de experiencia, clientes, y satisfaccion 
+window.addEventListener("load", function() {
+    let counter1 = document.getElementById("counter1");
+    let counter2 = document.getElementById("counter2");
+    let counter3 = document.getElementById("counter3");
 
-// })
-// }
+    let count1 = 0;
+    let count2 = 0;
+    let count3 = 0;
+    let target1 = 30;
+    let target2 = 50;
+    let target3 = 100;
+
+    function updateCounter1() {
+        counter1.innerHTML = `+ ${count1}<p>Años de experiencia</p>`;
+                
+        if (count1 < target1) {
+            count1++;
+        }
+
+    }
+    function updateCounter2() {
+        counter2.innerHTML = `+ ${count2}<p>Clientes felices</p>`;
+            
+        if (count2 < target2) {
+            count2++;
+        }
+  
+    }
+
+    function updateCounter3(){
+        counter3.innerHTML = `${count3} % <p>Satisfacción</p>`;
+
+     if (count3 < target3) {
+        count3++;
+      }
+    }
+
+    setInterval(updateCounter1, 100);
+    setInterval(updateCounter2, 60);
+    setInterval(updateCounter3, 30);
+  });
+  // fin contador experiencia ------------------------
 
 
 AOS.init(); 
