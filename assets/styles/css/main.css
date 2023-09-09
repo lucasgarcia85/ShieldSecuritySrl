@@ -11910,7 +11910,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Kanit", sans-serif;
   font-size: 1.7rem;
   line-height: 1.5;
 }
@@ -12381,7 +12381,7 @@ header .navbar .navbar-collapse .nav-item .nav-link {
   color: black;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   position: relative;
   transition: all 0.4s ease;
 }
@@ -12509,11 +12509,11 @@ header .navbar-brand img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  width: 12rem;
+  justify-content: start;
+  width: 14rem;
   height: 10rem;
   font-size: 2rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 @media (min-width: 576px) {
   .por_que_elegirnos > .container .banner_contador .counter {
@@ -12522,8 +12522,8 @@ header .navbar-brand img {
 }
 .por_que_elegirnos > .container .banner_contador .counter p {
   padding-top: 0.3rem;
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 400;
   color: #d0b8b8;
   text-align: center;
 }
@@ -12553,6 +12553,12 @@ header .navbar-brand img {
 }
 .por_que_elegirnos > .container .know_how {
   margin: 3rem 0;
+  text-align: justify;
+}
+@media (min-width: 576px) {
+  .por_que_elegirnos > .container .know_how {
+    text-align: left;
+  }
 }
 .por_que_elegirnos > .container .slider {
   background-color: #8d8787;
