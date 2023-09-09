@@ -12406,23 +12406,23 @@ header .navbar .navbar-collapse .nav-item .nav-link:hover:after {
   }
 }
 header .navbar-brand img {
-  width: 60px;
+  width: 200px;
   height: auto;
   transition: all 0.3s ease;
 }
 @media (min-width: 576px) {
   header .navbar-brand img {
-    width: 60px;
+    width: 220px;
   }
 }
 @media (min-width: 768px) {
   header .navbar-brand img {
-    width: 80px;
+    width: 240px;
   }
 }
 @media (min-width: 992px) {
   header .navbar-brand img {
-    width: 115px;
+    width: 260px;
   }
 }
 

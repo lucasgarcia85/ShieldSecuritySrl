@@ -100,18 +100,18 @@ header {
 
     .navbar-brand {
         img {
-            width: 60px;
+            width: 200px;
             height: auto;
             transition: all 0.3s ease;
 
             @include media-breakpoint-up(sm) {
-                width: 60px;
+                width: 220px;
                 }
             @include media-breakpoint-up(md){
-                width: 80px;
+                width: 240px;
             }
             @include media-breakpoint-up(lg){
-                width: 115px;
+                width: 260px;
             }
         }
     }
