@@ -185,10 +185,11 @@ AOS.init();
 
     const swiper = new Swiper('.swiper', {
         // Optional parameters
-        slidesPerView: 4,
-        spaceBetween: 5,
-        direction: 'horizontal',
+        slidesPerView: 1,
+        spaceBetween: 25,
+        // direction: 'horizontal',
         loop: true,
+        autoplay: true,
       
         // If we need pagination
         pagination: {
@@ -200,11 +201,21 @@ AOS.init();
           nextEl: '.swiper-button-next',
           prevEl: '.swiper-button-prev',
         },
-      
-        // And if we need scrollbar
-        scrollbar: {
-          el: '.swiper-scrollbar',
+        breakpoints: {
+          640: {
+            slidesPerView: 2
+          },
+          768: {
+            slidesPerView: 3
+          },
+          1200: {
+            slidesPerView: 4
+          },
         },
+        // And if we need scrollbar
+        // scrollbar: {
+        //   el: '.swiper-scrollbar',
+        // },
       });
 
     

@@ -12433,7 +12433,7 @@ header .navbar-brand img {
 }
 
 .por_que_elegirnos {
-  margin-top: 14rem;
+  margin: 14rem 0 25rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/imagenes-para-blog-Camaras-de-seguridad-BANNER.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -12502,7 +12502,7 @@ header .navbar-brand img {
   padding: 3rem;
 }
 .por_que_elegirnos > .container .know_how {
-  margin: 3rem 0;
+  margin: 3rem 0 0;
   text-align: justify;
 }
 @media (min-width: 576px) {
@@ -12512,18 +12512,25 @@ header .navbar-brand img {
 }
 .por_que_elegirnos > .container .slider {
   background-color: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
-  height: 20rem;
   margin: 0rem auto;
-  transform: translateY(13rem);
   border-radius: 2rem;
+  margin: 7rem auto -22rem;
 }
 .por_que_elegirnos > .container .slider .swiper {
-  padding: 1rem;
   width: 100%;
-  height: 100%;
+  padding-bottom: 5rem;
+}
+.por_que_elegirnos > .container .slider .swiper .swiper-slide {
+  height: 350px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 1rem;
+  overflow: hidden;
 }
 .por_que_elegirnos > .container .slider .swiper img {
   height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 
 .servicios {
