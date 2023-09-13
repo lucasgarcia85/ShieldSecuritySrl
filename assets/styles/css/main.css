@@ -12427,9 +12427,14 @@ header .navbar-brand img {
 }
 .section1 > .container div p {
   padding-top: 4rem;
-  width: 70%;
+  padding-bottom: 2rem;
   text-align: center;
   margin: auto;
+}
+@media (min-width: 576px) {
+  .section1 > .container div p {
+    width: 70%;
+  }
 }
 
 .por_que_elegirnos {

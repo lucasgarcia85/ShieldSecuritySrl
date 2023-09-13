@@ -48,9 +48,13 @@
 
             p{
                 padding-top: 4rem;
-                width: 70%;
+                padding-bottom: 2rem;
                 text-align: center;
                 margin: auto;
+
+                @include media-breakpoint-up(sm){
+                    width: 70%;
+                }
             }
 
 
