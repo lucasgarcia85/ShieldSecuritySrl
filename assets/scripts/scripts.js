@@ -189,7 +189,12 @@ AOS.init();
         spaceBetween: 25,
         // direction: 'horizontal',
         loop: true,
-        autoplay: true,
+        autoplay: {
+        delay: 800,
+        pauseOnMouseEnter: true,
+        disableOnInteraction: false,
+        },
+
       
         // If we need pagination
         pagination: {

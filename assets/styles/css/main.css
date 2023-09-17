@@ -11973,7 +11973,7 @@ h2:after,
 }
 
 h1, .h1 {
-  font-size: 3.3rem;
+  font-size: 3.4rem;
 }
 @media (min-width: 768px) {
   h1, .h1 {
@@ -11982,7 +11982,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 2.2rem;
+  font-size: 2.3rem;
 }
 @media (min-width: 768px) {
   h2, .h2 {
@@ -11996,7 +11996,7 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 2rem;
+  font-size: 2.1rem;
 }
 h3:after, .h3:after {
   content: "";
@@ -12010,11 +12010,11 @@ h3:after, .h3:after {
 }
 
 h4, .h4 {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
 .lg-sub-html p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 /*ANIMATIONS
@@ -12057,10 +12057,15 @@ h4, .h4 {
 }
 footer {
   padding-top: 4rem;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/monitoring.jpg);
-  background-size: cover;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../../images/monitoring.jpg);
+  background-position: 17% 0%;
   /*CONTACT FORM
   ****************************************/
+}
+@media (min-width: 576px) {
+  footer {
+    background-size: cover;
+  }
 }
 footer .form {
   margin-bottom: 4rem;
@@ -12204,12 +12209,17 @@ footer .info h4 i, footer .info .h4 i {
   margin-right: 0.7rem;
   font-size: 2.1rem;
 }
-footer .info p, footer .info a {
+footer .info a {
+  display: block;
   font-size: 1.8rem;
   color: white;
+  text-decoration: none;
+}
+footer .info a:hover {
+  text-decoration: underline;
 }
 @media (min-width: 576px) {
-  footer .info p, footer .info a {
+  footer .info a {
     margin-left: 3rem;
   }
 }
@@ -12391,7 +12401,7 @@ header .navbar-brand img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/Centro-Monitoreo-1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../images/Centro-Monitoreo-1.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12587,6 +12597,10 @@ header .navbar-brand img {
   .servicios .container .soluciones__grid .soluciones__grid--servicio .btn {
     margin-top: auto;
   }
+}
+.servicios .container .soluciones__grid .soluciones__grid--servicio .btn i {
+  margin-right: 0.8rem;
+  color: rgb(255, 255, 255);
 }
 
 .seguridad_estatica_personal {

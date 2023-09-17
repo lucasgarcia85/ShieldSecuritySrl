@@ -1,8 +1,12 @@
 footer {
     padding-top: 4rem;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../../images/monitoring.jpg);
-    background-size: cover;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)), url(../../images/monitoring.jpg);
+    background-position: 17% 0%;
 
+    @include media-breakpoint-up(sm) {
+        background-size: cover;
+        
+     }
 
     .form {
         margin-bottom: 4rem;
@@ -188,9 +192,15 @@ footer {
             }
         }
 
-        p, a{
+        a{
+            display: block;
             font-size: 1.8rem;
             color: white;
+            text-decoration: none;
+            &:hover{
+               text-decoration: underline;
+                
+            }
 
             @include media-breakpoint-up(sm) {
                 margin-left: 3rem;
