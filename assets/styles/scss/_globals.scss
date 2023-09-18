@@ -29,6 +29,8 @@ body {
     font-weight: 600;
     border-radius: 5rem;
     margin: 4rem auto;
+    // overflow: hidden;
+    background-color: $color-marca;
 
    
     span {
@@ -37,28 +39,36 @@ body {
     }
 
     
-    &:after {
-        content: '';
-        display: inline-block;
-        width: 0;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        transition: all 0.3s ease;
-        background-color: $color-marca;
-        z-index: 9;
-    }
-    
-    &.btn-primary {
-        background: $color-marca;
-        &:hover {
+    // &:after {
+    //     content: '';
+    //     display: inline-block;
+    //     width: 0;
+    //     height: 100%;
+    //     position: absolute;
+    //     left: 0;
+    //     transition: all 0.3s ease;
+    //     background-color: #925b4a;
+    //     z-index: 5;
+    // }
 
-                       
-            &:after {
-                width: 100%;
-            }
+    &.btn{
+                        
+        &:hover {
+            color:$color-marca;
+            background-color: white;
+            box-shadow: 4px 4px 7px 2px #902F12;
         }
     }
+    
+    // &.btn-primary{
+                        
+    //     &:hover {
+                       
+    //         &:after {
+    //             width: 100%;
+    //         }
+    //     }
+    // }
 
     &.btn-whatsapp {
         background-color: $color-whatsapp;

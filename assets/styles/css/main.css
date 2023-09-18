@@ -11882,27 +11882,16 @@ body {
   font-weight: 600;
   border-radius: 5rem;
   margin: 4rem auto;
+  background-color: #902F12;
 }
 .btn span {
   position: relative;
   z-index: 10;
 }
-.btn:after {
-  content: "";
-  display: inline-block;
-  width: 0;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  transition: all 0.3s ease;
-  background-color: #902F12;
-  z-index: 9;
-}
-.btn.btn-primary {
-  background: #902F12;
-}
-.btn.btn-primary:hover:after {
-  width: 100%;
+.btn.btn:hover {
+  color: #902F12;
+  background-color: white;
+  box-shadow: 4px 4px 7px 2px #902F12;
 }
 .btn.btn-whatsapp {
   background-color: #1fca1f;
@@ -12337,7 +12326,7 @@ header .navbar .navbar-collapse .nav-item:not(:last-child) {
   margin-right: 1.8rem;
 }
 header .navbar .navbar-collapse .nav-item .nav-link {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: black;
   letter-spacing: -0.02em;
   text-transform: uppercase;
@@ -12401,7 +12390,7 @@ header .navbar-brand img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../images/Centro-Monitoreo-1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), url(../../images/centromonitoreo.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -12452,6 +12441,7 @@ header .navbar-brand img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../images/imagenes-para-blog-Camaras-de-seguridad-BANNER.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: 86% 50%;
   color: white;
 }
 .por_que_elegirnos > .container .banner_contador {
@@ -12511,7 +12501,7 @@ header .navbar-brand img {
   justify-content: center;
   width: 25rem;
   height: 13rem;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.786);
   border-radius: 2rem;
   color: black;
   padding: 3rem;
@@ -12600,7 +12590,6 @@ header .navbar-brand img {
 }
 .servicios .container .soluciones__grid .soluciones__grid--servicio .btn i {
   margin-right: 0.8rem;
-  color: rgb(255, 255, 255);
 }
 
 .seguridad_estatica_personal {
