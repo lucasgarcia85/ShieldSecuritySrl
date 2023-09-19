@@ -190,7 +190,7 @@ AOS.init();
         // direction: 'horizontal',
         loop: true,
         autoplay: {
-        delay: 800,
+        delay: 1000,
         pauseOnMouseEnter: true,
         disableOnInteraction: false,
         },
