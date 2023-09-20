@@ -26,7 +26,7 @@ if( empty(trim($name)) ) $name = 'anonimo';
 // if( empty(trim($service)) ) $service = 'El Usuario no seleccionó ningún servicio';
 
 $body = <<<HTML
-    <h1>Mensaje recibido desde www.Iwomicrocorrugado.com.ar</h1>
+    <h1>Mensaje recibido desde www.shieldsecurity.com.ar</h1>
     <p>De: $name | $email | $telephone</p>
     <p>Servicio por el que consulta: $emailsubject</p>
     $message
@@ -40,7 +40,7 @@ try {
     $mailer->isSMTP();
     $mailer->Host = 'c1762198.ferozo.com';
     $mailer->SMTPAuth = true;  
-    $mailer->Username = 'info@iwomicrocorrugado.com.ar';
+    $mailer->Username = 'info@shieldsecurity.com.ar';
     $mailer->Password = 'Ivo2024*';
     $mailer->SMTPSecure = 'ssl';                          
     $mailer->Port = 465;
@@ -48,7 +48,7 @@ try {
     
     //Recipients
     $mailer->setFrom( $email, "$name" );
-    $mailer->addAddress('info@iwomicrocorrugado.com.ar','Sitio web');
+    $mailer->addAddress('info@shieldsecurity.com.ar','Sitio web');
 
     //Content
     $mailer->isHTML(true);
