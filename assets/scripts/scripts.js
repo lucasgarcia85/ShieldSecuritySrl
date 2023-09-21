@@ -75,7 +75,7 @@ navLinks.forEach((l) => {
     let target3 = 100;
 
     function updateCounter1() {
-        counter1.innerHTML = `+ ${count1}<p>Años de experiencia</p>`;
+        counter1.innerHTML = `+${count1}<p>Años de experiencia</p>`;
                 
         if (count1 < target1) {
             count1++;
@@ -83,7 +83,7 @@ navLinks.forEach((l) => {
 
     }
     function updateCounter2() {
-        counter2.innerHTML = `+ ${count2}<p>Clientes felices</p>`;
+        counter2.innerHTML = `+${count2}<p>Clientes felices</p>`;
             
         if (count2 < target2) {
             count2++;
@@ -92,7 +92,7 @@ navLinks.forEach((l) => {
     }
 
     function updateCounter3(){
-        counter3.innerHTML = `${count3} % <p>Satisfacción</p>`;
+        counter3.innerHTML = `${count3}% <p>Satisfacción</p>`;
 
      if (count3 < target3) {
         count3++;
@@ -223,4 +223,11 @@ AOS.init();
         // },
       });
 
-    
+  
+
+/*Sticky header
+******************************************/
+window.addEventListener('scroll', function () {
+  var header = document.querySelector('header');
+  header.classList.toggle("sticky", window.scrollY > 0);
+});

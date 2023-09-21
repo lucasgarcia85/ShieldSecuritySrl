@@ -1,7 +1,8 @@
 footer {
     padding-top: 4rem;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)), url(../../images/monitoring.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.66),rgba(0,0,0,0.85)), url(../../images/monitoring.jpg);
     background-position: 17% 0%;
+    margin-top: 3rem;
 
     @include media-breakpoint-up(sm) {
         background-size: cover;
@@ -44,15 +45,8 @@ footer {
     
         .form-group {
             margin: auto;
-            margin-bottom: 2.2rem;
-            width: 85%;
-                @include media-breakpoint-up(md) {
-                    width: 88%;
-                }
-                @include media-breakpoint-up(lg) {
-                    width: 92%;
-                }
-
+            margin-bottom: 2.5rem;
+            width: 95%;
     
             .form-control,
             .form-select {
@@ -120,6 +114,14 @@ footer {
     .redes {
             color: white;
 
+        h2 {
+            &:after {
+                @include media-breakpoint-up(lg) {
+                    margin-left: 0;
+                }
+            }
+        }
+
         h3{
             text-align: center;
             font-size: 3rem;
@@ -173,22 +175,28 @@ footer {
     
     }
     .info{
-        color: white;
-        padding-top: 2rem;
+        color: #fff;
+        padding-top: 4rem;
         text-align: center;
 
-        @include media-breakpoint-up(sm) {
-            width: 50%;
-            margin: auto;
+        @include media-breakpoint-up(lg) {
+            // width: 50%;
+            // margin: auto;
             text-align: left;
         }
 
 
         h4{
+            font-size: 2rem;
             i{
                 text-decoration: none;
-                margin-right:0.7rem;
-                font-size: 2.1rem;
+                margin-right:   1rem;
+                font-size: 2.4rem;
+                transform: translateY(.2rem);
+                @include media-breakpoint-up(lg) {
+                    transform: translateY(.5rem);
+                    font-size: 2.8rem;
+                }
             }
         }
 
@@ -196,14 +204,13 @@ footer {
             display: block;
             font-size: 1.8rem;
             color: white;
-            text-decoration: none;
             &:hover{
-               text-decoration: underline;
+               color: #d39471;
                 
             }
 
             @include media-breakpoint-up(sm) {
-                margin-left: 3rem;
+                margin-left: 4rem;
             }
         }
     }
