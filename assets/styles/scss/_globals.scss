@@ -5,18 +5,15 @@ html {
 
 
 body {
+   
     font-family: 'Kanit', sans-serif;
-    font-size: 1.8rem;
-    line-height: 1.4;
-    font-weight: 300;
-    padding-top: 83px;
-    @include media-breakpoint-up(lg) {
-        padding-top: 0;
+    font-size: 1.7rem;
+    line-height: 1.5;
+
     }
-}
 
 .btn {
-    min-width: 200px;
+    min-width: 240px;
     color: #fff;
     border: none;
     text-decoration: none;
@@ -27,21 +24,21 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1rem 2rem;
+    padding: 1rem 1.6rem;
     position: relative;
     font-weight: 600;
     border-radius: 5rem;
-    // margin: 4rem auto;
+    margin: 4rem auto;
     // overflow: hidden;
     background-color: $color-marca;
 
-
+   
     span {
         position: relative;
         z-index: 10;
     }
 
-
+    
     // &:after {
     //     content: '';
     //     display: inline-block;
@@ -54,19 +51,19 @@ body {
     //     z-index: 5;
     // }
 
-    &.btn {
-
+    &.btn{
+                        
         &:hover {
-            color: $color-marca;
+            color:$color-marca;
             background-color: white;
-            box-shadow: 0 0 10px 2px #902F12;
+            box-shadow: 4px 4px 7px 2px #902F12;
         }
     }
-
+    
     // &.btn-primary{
-
+                        
     //     &:hover {
-
+                       
     //         &:after {
     //             width: 100%;
     //         }
@@ -78,17 +75,14 @@ body {
         border-radius: 2.5rem;
         overflow: hidden;
         color: #fff !important;
-
         &:after {
             background-color: #009688;
         }
-
         &:hover {
             &:after {
                 width: 100%;
             }
         }
-
         i {
             margin-right: .7rem;
             font-size: 2rem;
@@ -100,7 +94,6 @@ body {
 
 a {
     transition: all 0.3s ease;
-    text-decoration: underline;
     // color: $color-blue-main;
     &:hover {
         color: $color-marca;
@@ -152,31 +145,23 @@ h2 {
 
 h1 {
     font-size: 3.4rem;
-
-    @include media-breakpoint-up(lg) {
-        font-size: 5rem;
+    @include media-breakpoint-up(md) {
+        font-size: 4.5rem;
     }
 }
 
 h2 {
     font-size: 2.8rem;
-
     @include media-breakpoint-up(md) {
-        font-size: 3.8rem;
+        font-size: 3rem;
     }
-
     @include media-breakpoint-down(sm) {
         text-align: center;
     }
 
 }
-
-h3 {
-    font-size: 2rem;
-    @include media-breakpoint-up(lg) {
-        font-size: 2.2rem;
-    }
-
+h3{
+    font-size: 2.1rem;
     &:after {
         content: "";
         display: block;
@@ -189,7 +174,7 @@ h3 {
     }
 }
 
-h4 {
+h4{
     font-size: 1.7rem;
 }
 
@@ -200,49 +185,42 @@ h4 {
 
 /*ANIMATIONS
 ********************************************/
-@keyframes bounce-in-top {
+  @keyframes bounce-in-top {
     0% {
         transform: translateY(-500px);
         animation-timing-function: ease-in;
         opacity: 0;
     }
-
     38% {
         transform: translateY(0);
         animation-timing-function: ease-out;
         opacity: 1;
     }
-
     55% {
         transform: translateY(-65px);
         animation-timing-function: ease-in;
     }
-
     72% {
         transform: translateY(0);
         animation-timing-function: ease-out;
     }
-
     81% {
         transform: translateY(-28px);
         animation-timing-function: ease-in;
     }
-
     90% {
         transform: translateY(0);
         animation-timing-function: ease-out;
     }
-
     95% {
         transform: translateY(-8px);
         animation-timing-function: ease-in;
     }
-
     100% {
         transform: translateY(0);
         animation-timing-function: ease-out;
     }
-}
+  }
 
 //   @keyframes shake {
 //     from {
@@ -254,21 +232,6 @@ h4 {
 //     to {
 //         scale: 1.0;
 //     }
-
+   
 // }
-
-
-@keyframes slide-in-top {
-    0% {
-        -webkit-transform: translateY(-1000px);
-                transform: translateY(-1000px);
-        opacity: 0;
-    }
-    100% {
-        -webkit-transform: translateY(0);
-                transform: translateY(0);
-        opacity: 1;
-    }
-}
-  
   

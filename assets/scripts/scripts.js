@@ -92,7 +92,7 @@ navLinks.forEach((l) => {
     }
 
     function updateCounter3(){
-        counter3.innerHTML = `${count3}% <p>Satisfacción</p>`;
+        counter3.innerHTML = `${count3}%<p>Satisfacción</p>`;
 
      if (count3 < target3) {
         count3++;
@@ -223,11 +223,4 @@ AOS.init();
         // },
       });
 
-  
-
-/*Sticky header
-******************************************/
-window.addEventListener('scroll', function () {
-  var header = document.querySelector('header');
-  header.classList.toggle("sticky", window.scrollY > 0);
-});
+    
