@@ -185,6 +185,7 @@ footer {
 
 
         h4{
+            
             i{
                 text-decoration: none;
                 margin-right:0.7rem;
@@ -192,9 +193,17 @@ footer {
             }
         }
 
+        h5{
+            text-decoration: underline;
+            
+            @include media-breakpoint-up(sm) {
+                margin-left: 3rem;
+            }
+        }
+
         a{
             display: block;
-            font-size: 1.8rem;
+            font-size: 1.5rem;
             color: white;
             text-decoration: none;
             &:hover{
