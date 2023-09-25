@@ -12139,6 +12139,42 @@ footer .formulario .botonform {
 footer .formulario .botonform .btn {
   min-width: 180px;
 }
+footer .formulario .botonform .btn:disabled {
+  background-color: #902F12;
+  color: rgb(130, 130, 130);
+}
+footer .formulario .captcha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-direction: column;
+  width: 100%;
+}
+@media (min-width: 576px) {
+  footer .formulario .captcha {
+    flex-direction: row;
+    row-gap: 3rem;
+  }
+}
+footer .formulario .captcha #recaptcha {
+  color: white;
+}
+footer .formulario .captcha #respuesta {
+  width: 100%;
+  border: none;
+  border-radius: 0.6rem;
+  text-align: center;
+}
+@media (min-width: 576px) {
+  footer .formulario .captcha #respuesta {
+    width: 20rem;
+  }
+}
+footer .formulario .captcha i {
+  font-size: 2.2rem;
+  color: white;
+}
 footer .logo-footer {
   margin-top: 4rem;
 }
@@ -12222,7 +12258,7 @@ footer .info a {
   text-decoration: none;
 }
 footer .info a:hover {
-  text-decoration: underline;
+  color: rgb(202, 150, 150);
 }
 @media (min-width: 576px) {
   footer .info a {
