@@ -12053,6 +12053,17 @@ h5, .h5 {
     animation-timing-function: ease-out;
   }
 }
+@keyframes scaleit {
+  from {
+    scale: 1;
+  }
+  50% {
+    scale: 1.2;
+  }
+  to {
+    scale: 1;
+  }
+}
 footer {
   padding-top: 4rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url(../../images/monitoring.jpg);
@@ -12286,17 +12297,21 @@ footer .footer-widget {
   left: 2rem;
   bottom: 1.5rem;
   z-index: 100;
-  animation: bounce-in-top 1.1s both;
-  animation-delay: 1s;
+  animation: bounce-in-top 1.1s linear 1.2s both, scaleit 1.8s linear 4s infinite;
   transition: all ease 0.6s;
 }
-@media (min-width: 768px) {
+@media (min-width: 576px) {
+  footer .footer-widget {
+    animation: bounce-in-top 1.1s linear 1.2s both;
+  }
+}
+@media (min-width: 992px) {
   footer .footer-widget:hover {
     scale: 1.2;
   }
 }
 footer .footer-widget a img {
-  width: 60px;
+  width: 50px;
 }
 @media (min-width: 768px) {
   footer .footer-widget a img {
