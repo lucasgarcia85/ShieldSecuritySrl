@@ -16,14 +16,13 @@ $telephone = $_POST['telephone'];
 $email = $_POST['email'];
 $emailsubject = $_POST['emailsubject'];
 $message = $_POST['message'];
-$subject = 'Mensaje recibido desde www.iwomicrocorrugado.com.ar';
+$subject = 'Mensaje recibido desde www.shieldsecurity.com.ar';
 
-$recaptcha_secret = "6LcdFocnAAAAAFNBd06hfGGpXuZx12UJV7nUDiEZ"; //Add secret key
-$response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$recaptcha_secret."&response=".$_POST['g-recaptcha-response']);
-$response = json_decode($response, true);
+
+$response = true;
 
 if( empty(trim($name)) ) $name = 'anonimo';
-// if( empty(trim($service)) ) $service = 'El Usuario no seleccionó ningún servicio';
+ if( empty(trim($service)) ) $service = 'El Usuario no seleccionó ningún servicio';
 
 $body = <<<HTML
     <h1>Mensaje recibido desde www.shieldsecurity.com.ar</h1>
@@ -38,10 +37,10 @@ try {
     //Server setting
     $mailer->SMTPDebug = 0;
     $mailer->isSMTP();
-    $mailer->Host = 'c1762198.ferozo.com';
+    $mailer->Host = 'smtp.hostinger.com';
     $mailer->SMTPAuth = true;  
     $mailer->Username = 'info@shieldsecurity.com.ar';
-    $mailer->Password = 'Ivo2024*';
+    $mailer->Password = 'Shield4@';
     $mailer->SMTPSecure = 'ssl';                          
     $mailer->Port = 465;
 
@@ -59,7 +58,7 @@ try {
 
     
 
-    if($response["success"] === true){
+    if($response == true){
         $mailer->send();
         header("Location: thank-you.html" );
     } else {

@@ -12166,13 +12166,14 @@ footer .formulario .captcha {
   footer .formulario .captcha {
     flex-direction: row;
     row-gap: 3rem;
+    justify-content: flex-start;
   }
 }
 footer .formulario .captcha #recaptcha {
   color: white;
 }
 footer .formulario .captcha #respuesta {
-  width: 100%;
+  width: 80%;
   border: none;
   border-radius: 0.6rem;
   text-align: center;

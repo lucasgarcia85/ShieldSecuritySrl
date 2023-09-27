@@ -113,6 +113,7 @@ footer {
             @include media-breakpoint-up(sm) {
                 flex-direction: row;
                 row-gap: 3rem;
+                justify-content: flex-start;
              }
 
 
@@ -123,7 +124,7 @@ footer {
             }
 
             #respuesta {
-                width: 100%;
+                width: 80%;
                 border: none;
                 border-radius: 0.6rem;
                 text-align: center;
