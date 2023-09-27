@@ -18,8 +18,9 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/styles/css/main.css">
   <title>Shield Security</title>
+
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   
-  <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
   <!-- <script type='application/ld+json'>
     {
       "@context": "http://www.schema.org",
@@ -385,19 +386,24 @@
                 <div>
                   <div class="form-group">
                     <div class="captcha">
+                      <div class="g-recaptcha" data-sitekey="6Lf2ZlsoAAAAABvO3PhGecMw8hOY2OwLvUaB4gkb">
+                        
+                      </div>
+                  </div>
+                    <!-- <div class="captcha">
                       <div id="recaptcha"></div>
                       <input type="text" id="respuesta" placeholder="Ingresa tu respuesta">
-                      <!-- <button type="button" onclick="reiniciarCaptcha()">Reiniciar Captcha</button> -->
+                      <button type="button" onclick="reiniciarCaptcha()">Reiniciar Captcha</button>
                       <i class="fa-solid fa-repeat" onclick="reiniciarCaptcha()"></i>
                     
-                    </div>
-                    <!-- <div class="g-recaptcha" data-sitekey="6LcdFocnAAAAAMUz7jhdx7L3W1uxYQx17FF8JKR3"></div> -->
+                    </div> -->
+                    
                   </div>
                 </div>
                 <div class="col-lg-6 col-sm-12">
-                   <div class="botonform ">  <!-- clase m-0 -->
-                    
-                    <button type="submit" id="enviar" class="btn mt-1" disabled><span>ENVIAR</span></button>
+                   <div class="botonform "> 
+                                        
+                    <button type="submit" id="enviar" class="btn mt-1"><span>ENVIAR</span></button>
                     
                   </div>
                 </div>

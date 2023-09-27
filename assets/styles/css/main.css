@@ -12143,6 +12143,13 @@ footer .formulario .form-group .form-select:focus {
 footer .formulario .form-group textarea {
   height: 178px;
 }
+footer .formulario .form-group .captcha {
+  width: 100%;
+  overflow: hidden;
+}
+footer .formulario .form-group .captcha .g-recaptcha {
+  display: inline;
+}
 footer .formulario .botonform {
   width: 85%;
   margin: auto;
@@ -12153,39 +12160,6 @@ footer .formulario .botonform .btn {
 footer .formulario .botonform .btn:disabled {
   background-color: #902F12;
   color: rgb(130, 130, 130);
-}
-footer .formulario .captcha {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  flex-direction: column;
-  width: 100%;
-}
-@media (min-width: 576px) {
-  footer .formulario .captcha {
-    flex-direction: row;
-    row-gap: 3rem;
-    justify-content: flex-start;
-  }
-}
-footer .formulario .captcha #recaptcha {
-  color: white;
-}
-footer .formulario .captcha #respuesta {
-  width: 80%;
-  border: none;
-  border-radius: 0.6rem;
-  text-align: center;
-}
-@media (min-width: 576px) {
-  footer .formulario .captcha #respuesta {
-    width: 20rem;
-  }
-}
-footer .formulario .captcha i {
-  font-size: 2.2rem;
-  color: white;
 }
 footer .logo-footer {
   margin-top: 4rem;

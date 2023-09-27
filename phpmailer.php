@@ -18,11 +18,11 @@ $emailsubject = $_POST['emailsubject'];
 $message = $_POST['message'];
 $subject = 'Mensaje recibido desde www.shieldsecurity.com.ar';
 
-
-$response = true;
+$recaptcha_secret = "6Lf2ZlsoAAAAABc07_QupPRb-d8DkJhE14N-nuu4"; //Add secret key
+$response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$recaptcha_secret."&response=".$_POST['g-recaptcha-response']);
+$response = json_decode($response, true);
 
 if( empty(trim($name)) ) $name = 'anonimo';
- if( empty(trim($service)) ) $service = 'El Usuario no seleccionó ningún servicio';
 
 $body = <<<HTML
     <h1>Mensaje recibido desde www.shieldsecurity.com.ar</h1>
@@ -58,7 +58,7 @@ try {
 
     
 
-    if($response == true){
+    if($response["success"] === true){
         $mailer->send();
         header("Location: thank-you.html" );
     } else {
@@ -69,7 +69,6 @@ try {
 } catch (Exception $e) {
     return "El mensaje no pudo ser enviado. Error: $mailer->ErrorInfo";
 }
-
 
 
 ?>

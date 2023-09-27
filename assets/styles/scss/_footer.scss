@@ -81,6 +81,16 @@ footer {
     
             }
 
+            .captcha{
+                width: 100%;
+                overflow: hidden;
+
+
+
+                .g-recaptcha{
+                    display: inline;
+                }
+            }
     
         }
 
@@ -102,46 +112,46 @@ footer {
         }
         
     
-        .captcha{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            flex-direction: column;
-            width: 100%;
+        // .captcha{
+        //     display: flex;
+        //     align-items: center;
+        //     justify-content: center;
+        //     gap: 1rem;
+        //     flex-direction: column;
+        //     width: 100%;
 
-            @include media-breakpoint-up(sm) {
-                flex-direction: row;
-                row-gap: 3rem;
-                justify-content: flex-start;
-             }
+        //     @include media-breakpoint-up(sm) {
+        //         flex-direction: row;
+        //         row-gap: 3rem;
+        //         justify-content: flex-start;
+        //      }
 
 
 
-            #recaptcha{
-                color:white;
+        //     #recaptcha{
+        //         color:white;
              
-            }
+        //     }
 
-            #respuesta {
-                width: 80%;
-                border: none;
-                border-radius: 0.6rem;
-                text-align: center;
+        //     #respuesta {
+        //         width: 80%;
+        //         border: none;
+        //         border-radius: 0.6rem;
+        //         text-align: center;
 
-                @include media-breakpoint-up(sm) {
-                   width: 20rem;
-                 }
+        //         @include media-breakpoint-up(sm) {
+        //            width: 20rem;
+        //          }
 
-            }
-            i{
-                font-size: 2.2rem;
-                color:white
+        //     }
+        //     i{
+        //         font-size: 2.2rem;
+        //         color:white
 
-            }
+        //     }
             
            
-        }
+        // }
     }
     
     
