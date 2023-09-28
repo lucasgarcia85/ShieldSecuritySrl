@@ -18,7 +18,7 @@ $emailsubject = $_POST['emailsubject'];
 $message = $_POST['message'];
 $subject = 'Mensaje recibido desde www.shieldsecurity.com.ar';
 
-$recaptcha_secret = "6Lf2ZlsoAAAAABc07_QupPRb-d8DkJhE14N-nuu4"; //Add secret key
+$recaptcha_secret = "6Ler01soAAAAADNgoKR0VDQDUQmDRbgd9FvtQj5k"; //Add secret key
 $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$recaptcha_secret."&response=".$_POST['g-recaptcha-response']);
 $response = json_decode($response, true);
 
