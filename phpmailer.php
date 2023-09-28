@@ -46,7 +46,7 @@ try {
 
     
     //Recipients
-    $mailer->setFrom( $email, "$name" );
+    $mailer->setFrom('info@shieldsecurity.com.ar', "$name" );
     $mailer->addAddress('info@shieldsecurity.com.ar','Sitio web');
 
     //Content
