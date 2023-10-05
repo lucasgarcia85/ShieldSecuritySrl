@@ -170,49 +170,49 @@ footer {
                 display: none;
             }
         }
-        .social-links {
-            list-style: none;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            margin: 3rem 0;
+        // .social-links {
+        //     list-style: none;
+        //     display: flex;
+        //     flex-direction: row;
+        //     align-items: center;
+        //     justify-content: center;
+        //     margin: 3rem 0;
     
-            li {
-                margin-right: 1.6rem;
+        //     li {
+        //         margin-right: 1.6rem;
     
-                @include media-breakpoint-up(md) {
-                    margin-right: 2rem;
-                }
+        //         @include media-breakpoint-up(md) {
+        //             margin-right: 2rem;
+        //         }
 
     
-                &:last-child {
-                    margin: 0;
-                }
+        //         &:last-child {
+        //             margin: 0;
+        //         }
     
-                a {
-                    width: 4rem;
-                    height: 4rem;
-                    line-height: 40px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    background: $color-menu;
-                    color: #fff;
-                    border-radius: 50%;
-                    text-decoration: none;
+        //         a {
+        //             width: 4rem;
+        //             height: 4rem;
+        //             line-height: 40px;
+        //             display: flex;
+        //             align-items: center;
+        //             justify-content: center;
+        //             background: $color-menu;
+        //             color: #fff;
+        //             border-radius: 50%;
+        //             text-decoration: none;
     
-                    &:hover {
-                        background-color: $color-marca;
-                        transform: translateY(-0.5rem);
-                    }
+        //             &:hover {
+        //                 background-color: $color-marca;
+        //                 transform: translateY(-0.5rem);
+        //             }
     
-                    i {
-                        font-size: 2.4rem;
-                    }
-                }
-            }
-        }
+        //             i {
+        //                 font-size: 2.4rem;
+        //             }
+        //         }
+        //     }
+        // }
     
     }
     .info{
@@ -228,6 +228,7 @@ footer {
 
 
         h4{
+            margin-top: 1.5rem;
             
             i{
                 text-decoration: none;
@@ -255,6 +256,16 @@ footer {
                 
             }
 
+            @include media-breakpoint-up(sm) {
+                margin-left: 3rem;
+            }
+        }
+        p{
+            display: block;
+            font-size: 1.5rem;
+            color: white;
+            
+           
             @include media-breakpoint-up(sm) {
                 margin-left: 3rem;
             }

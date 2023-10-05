@@ -12174,44 +12174,6 @@ footer .redes h3, footer .redes .h3 {
 footer .redes h3::after, footer .redes .h3::after {
   display: none;
 }
-footer .redes .social-links {
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin: 3rem 0;
-}
-footer .redes .social-links li {
-  margin-right: 1.6rem;
-}
-@media (min-width: 768px) {
-  footer .redes .social-links li {
-    margin-right: 2rem;
-  }
-}
-footer .redes .social-links li:last-child {
-  margin: 0;
-}
-footer .redes .social-links li a {
-  width: 4rem;
-  height: 4rem;
-  line-height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: black;
-  color: #fff;
-  border-radius: 50%;
-  text-decoration: none;
-}
-footer .redes .social-links li a:hover {
-  background-color: #902F12;
-  transform: translateY(-0.5rem);
-}
-footer .redes .social-links li a i {
-  font-size: 2.4rem;
-}
 footer .info {
   color: white;
   padding-top: 2rem;
@@ -12223,6 +12185,9 @@ footer .info {
     margin: auto;
     text-align: left;
   }
+}
+footer .info h4, footer .info .h4 {
+  margin-top: 1.5rem;
 }
 footer .info h4 i, footer .info .h4 i {
   text-decoration: none;
@@ -12248,6 +12213,16 @@ footer .info a:hover {
 }
 @media (min-width: 576px) {
   footer .info a {
+    margin-left: 3rem;
+  }
+}
+footer .info p {
+  display: block;
+  font-size: 1.5rem;
+  color: white;
+}
+@media (min-width: 576px) {
+  footer .info p {
     margin-left: 3rem;
   }
 }
